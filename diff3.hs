@@ -1,13 +1,13 @@
-diff1 :: Int -> Int -> Int -> Bool -> IO()
+diff1 :: Int -> Int -> Int -> IO()
 diff1 a b c
- | a == b = False
- | a == c = False
- | b == c = False
- | otherwise = True
- print Bool
+ | a == b = print False
+ | a == c = print False
+ | b == c = print False
+ | otherwise = print True
 
 main :: IO()
 main = do
+    putStrLn "This program will determine if all numbers are the same (FALSE) or different (TRUE)"
     putStrLn "Please enter number 1: "
     firstNum <- getLine
     let a = read firstNum::Int
