@@ -1,9 +1,6 @@
 diff1 :: Int -> Int -> Int -> IO()
 diff1 a b c
- | a == b = print False
- | a == c = print False
- | b == c = print False
- | otherwise = print True
+ print Bool
 
 main :: IO()
 main = do
